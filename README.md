@@ -25,15 +25,15 @@
 
 三、目录说明
 
- -- apis              // axios及相关服务调用封装
- -- components        // 公用组件封装
- -- packages          // 子项目根目录
+ -- apis                        // axios及相关服务调用封装
+ -- components           // 公用组件封装
+ -- packages                // 子项目根目录
     -- my-snabbdom    // 对snabbdom虚拟dom库的虚拟节点、h函数、diff算法的学习，vue的diff就是基于此的优化
-    -- my-js          // 对js基础的实践学习
-    -- my-mdn         // 对mdn中的worker等的实践学习
-    -- my-ts          // 对typescript的学习
-    -- my-vue         // 对vue2/3源码对比学习实践，总结升级的改进；对VueUse，VueRouter，Vue-Cli等的源码实践
-    -- my-es          // 对es6的知识点学习和实践
+    -- my-js                   // 对js基础的实践学习
+    -- my-mdn              // 对mdn中的worker等的实践学习
+    -- my-ts                   // 对typescript的学习
+    -- my-vue                // 对vue2/3源码对比学习实践，总结升级的改进；对VueUse，VueRouter，Vue-Cli等的源码实践
+    -- my-es                  // 对es6的知识点学习和实践
 
  四、项目涵盖内容
 
