@@ -1,0 +1,6 @@
+packages:
+  # 子项目所在文件
+  - 'packages/*'
+  # 公共组件的文件
+  - 'components/**'
+  - 'apis/**'
