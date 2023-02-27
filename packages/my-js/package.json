@@ -1,25 +1,28 @@
 {
-  "name": "-my-js",
-  "version": "0.0.0",
-  "private": true,
+  "name": "my-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
-  },
-  "dependencies": {
-    "pinia": "^2.0.28",
-    "vue": "^3.2.45"
+    "build": "webpack --mode=production --node-env=production --json > result.json --progress --profile",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve", 
+    "configtest": "webpack configtest",
+    "info": "webpack info",
+    "loader": "webpack loader ./my-loader --template=default",
+    "plugin": "webpack plugin ./my-plugin --template=default",
+    "version": "webpack --version",
+    "analyzer": "webpack --analyze",
+    "stats": "webpack --stats verbose"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vitejs/plugin-vue-jsx": "^3.0.0",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "eslint": "^8.22.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "prettier": "^2.7.1",
-    "vite": "^4.0.0"
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-dev-server": "^4.11.1",
+    "workbox-webpack-plugin": "^6.5.4"
   }
 }

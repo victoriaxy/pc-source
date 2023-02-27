@@ -1,0 +1,20 @@
+{
+  "name": "@xy/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production --json > result.json --progress --profile",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve",
+    "clean": "rimraf node_modules",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

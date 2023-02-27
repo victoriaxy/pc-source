@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "noderun": "webpack --config webpack/node/run.js --mode=development",
+    "nodewatch": "webpack --config webpack/node/watch.js --mode=production",
+    "nodememfs": "webpack --config webpack/node/memfs-file-system.js --mode=production",
+    "nodefs": "webpack --config webpack/node/nodefs-file-system.js --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "memfs": "^3.4.13",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

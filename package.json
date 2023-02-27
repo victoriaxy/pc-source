@@ -4,9 +4,45 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:snabbdom": "pnpm run -F my-snabbdom dev",
+    "dev:js": "pnpm run -F my-js serve",
+    "dev:mdn": "pnpm run -F my-mdn dev",
+    "dev:app": "pnpm run -F my-app serve",
+    "build:snabbdom": "pnpm run -F my-snabbdom build",
+    "build:js": "pnpm run -F my-js build",
+    "build:mdn": "pnpm run -F my-mdn build",
+    "preview:snabbdom": "pnpm run -F my-snabbdom preview",
+    "preview:js": "pnpm run -F my-js preview",
+    "preview:mdn": "pnpm run -F my-mdn preview",
+    "lint:snabbdom": "pnpm run -F my-snabbdom lint",
+    "lint:js": "pnpm run -F my-js lint",
+    "lint:mdn": "pnpm run -F my-mdn lint",
+    "clean": "rimraf node_modules"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "victoria",
+  "license": "ISC",
+  "dependencies": {
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@webpack-cli/generators": "^3.0.1",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "vite": "^4.0.0",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1"
+  }
 }

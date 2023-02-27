@@ -1,6 +1,8 @@
-# -my-snabbdom
+# my-snabbdom
 
-This template should help get you started developing with Vue 3 in Vite.
+snabbdom：一个精简化、模块化、功能强大、性能卓越的虚拟 DOM 库。当前Vue前端框架也是基于此思想设计的。
+
+该工程主要是参照snabbdom的源码，实践代码中的diff算法、虚拟节点、节点更新等操作，学习其思想提升自身的编程能力。也会与vue中相关的使用和优化做一个对比。
 
 ## Recommended IDE Setup
 
@@ -10,26 +12,14 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+目录结构：
 
-```sh
-pnpm install
-```
+核心思想结构图和流程图如下：
 
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+* 虚拟节点
+* h
+* patch
+* patchVNode
+* updateChildren
+* 结构图：
+* 流程图：
